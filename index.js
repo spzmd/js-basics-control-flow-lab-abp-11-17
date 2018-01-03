@@ -9,14 +9,17 @@ function scuberGreetingForFeet(string) {
   }
 }
 
-function ternaryCheckCity(string) {
+/*function ternaryCheckCity(string) {
   if ("NYC"==string) {
     return "Ok, sounds good.";
   } else {
     return "No go.";
   }
 }
-
+*/
+function ternaryCheckCity(city) {
+  return (city === "NYC") ? "Ok, sounds good." : "No go.";
+}
 function switchOnCharmFromTip(string) {
   /*switch("thank you for everything") {
     case 'generous' == string:
