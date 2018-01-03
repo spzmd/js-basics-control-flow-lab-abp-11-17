@@ -20,7 +20,18 @@ function scuberGreetingForFeet(string) {
 function ternaryCheckCity(city) {
   return (city === "NYC") ? "Ok, sounds good." : "No go.";
 }
-function switchOnCharmFromTip(string) {
+function switchOnCharmFromTip(tipString) {
+  switch(tipString) {
+    case "generous":
+      return "Thank you so much."
+      break;
+    case "not as generous":
+      return "Thank you."
+      break;
+    case "thanks for everything":
+      return "Bye."
+      break;
+  }
   /*switch("thank you for everything") {
     case 'generous' == string:
       return "Thank you so much.";
@@ -32,12 +43,11 @@ function switchOnCharmFromTip(string) {
       return "Bye."
   }
 }
-*/
-if ("generous" == string) {
+/*if ("generous" == string) {
    return "Thank you so much.";
  } else if ("not as generous" == string) {
    return "Thank you.";
  } else {
    return "Bye.";
- }
+ }*/
 }
